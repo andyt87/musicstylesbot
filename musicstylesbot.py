@@ -30,9 +30,10 @@ def handle(msg):
 		except HTTPError:
 			bot.sendMessage(chat_id, "not found")
 
-bot=telepot.Bot('****') #your telegram bot token must be here
-bot.message_loop(handle)
-
 if __name__ == '__main__':
+	
+bot=telepot.Bot('****') #your telegram bot token must be here
+
+bot.message_loop(handle)
 	while 1:
 		time.sleep(5)
